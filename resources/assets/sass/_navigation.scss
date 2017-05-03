@@ -1,0 +1,150 @@
+/* *********************************
+           Variables
+  ********************************** */
+
+$navbar-height: 75px;
+$big-logo-padding: 15px; // adjust these 2 values
+$small-logo-padding: 0px; // of bottom padding to look nice
+
+/* *********************************
+   Some Style Overrides on Bootstrap
+  ********************************** */
+
+.navbar-inverse {
+    background: rgba(62, 195, 246, 0);
+    border-bottom: none;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: 1px solid #333;
+    border-color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+    border-color: transparent;
+    @media (max-width: 767px) {
+        background: rgba(255, 255, 255, 0.75);
+    }
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-size: 1.5em;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: white;
+}
+
+ul.nav {}
+
+
+/* Effect 17: move up fade out, push border */
+
+.cl-effect-17 li a {
+    color: #10649b;
+    text-shadow: none;
+    padding: 10px;
+}
+
+.cl-effect-17 li a::before {
+    color: #fff;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    content: attr(data-hover);
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+}
+
+.cl-effect-17 li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    transform: translateY(5px);
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    pointer-events: none;
+}
+
+.cl-effect-17 li a:hover::before,
+.cl-effect-17 li a:focus::before {
+    opacity: 0;
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    transform: translateY(-2px);
+}
+
+.cl-effect-17 li a:hover::after,
+.cl-effect-17 li a:focus::after {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+}
+
+
+/* *********************************
+           Toolbar Logo
+  ********************************** */
+
+.small-logo-container {
+    padding-top: $navbar-height;
+    height: $navbar-height;
+    overflow: hidden;
+}
+
+.small-logo img {
+    //    color: white;
+    height: 75px;
+    width: auto;
+    padding-bottom: $small-logo-padding;
+}
+
+
+/* *********************************
+           Big Logo
+  ********************************** */
+
+.big-logo-row {
+    .big-logo-container {
+        padding-top: $navbar-height;
+        margin-top: 50vh;
+        text-align: center;
+    }
+    h1 {
+        font-size: 5em;
+        margin: 0;
+        padding: 0 0 $big-logo-padding 0;
+        @media (min-width: 400px) {
+            font-size: 3em;
+        }
+        @media (min-width: 440px) {
+            font-size: 2em;
+        }
+        @media (min-width: 500px) {
+            font-size: 3em;
+        }
+        @media (min-width: 630px) {
+            font-size: 3em;
+        }
+        @media (min-width: 768px) {
+            font-size: 4em;
+            padding-bottom: $big-logo-padding * 2;
+        }
+        @media (min-width: 1200px) {
+            font-size: 6em;
+        }
+    }
+}
