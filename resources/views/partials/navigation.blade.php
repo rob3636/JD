@@ -44,7 +44,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">
-            <h1 class="big-logo">Johnny's Dumplings House</h1>
+            <h1 class="big-logo">Johnny's Dumplings House test</h1>
           </div><!--/.col-xs-12 -->
         </div><!--/.row -->
       </div><!--/.container -->
