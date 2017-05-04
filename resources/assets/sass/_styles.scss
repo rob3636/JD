@@ -79,7 +79,8 @@ section {
             margin: 0;
             padding: 0;
             text-align: left;
-            font-weight: 400;
+            font-family: 'Amatic SC', cursive;
+            font-weight: 700;
             @media (min-width: 400px) {
                 font-size: 3em;
                 padding: 10px;
@@ -97,7 +98,7 @@ section {
                 font-size: 4em;
             }
             @media (min-width: 1200px) {
-                font-size: 4em;
+                font-size: 6em;
             }
         }
         .row {
@@ -107,6 +108,7 @@ section {
                     margin: 0;
                     padding: 0;
                     text-align: justify;
+                    font-family: 'Open Sans Condensed', sans-serif;
                     font-weight: 200;
                     @media (min-width: 400px) {
                         font-size: 1em;
@@ -138,9 +140,9 @@ section {
 }
 
 #awards {
-    background-color: lightgrey;
+    background-color: #fafafa;
 }
 
 #contact {
-    background-color: lightgrey;
+    background-color: #fafafa;
 }
