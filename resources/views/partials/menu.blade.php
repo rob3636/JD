@@ -9,7 +9,7 @@
 
                       <ul class="pgwSlider">
     @foreach($menues as $item)
-    <li><img src="{{asset('menu')}}/{{$item->image}}" alt="{{$item->title}} {{$item->price}}" data-description="{{$item->description}}">
+    <li><img src="{{asset('menu')}}/{{$item->image}}" alt="{{$item->title}} {{$item->quantity}} for ${{$item->price}}" data-description="{{$item->description}}">
 
     </li>
     @endforeach
