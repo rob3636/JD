@@ -39,6 +39,7 @@ class menuController extends Controller
         
         $newitem->title = $request->title;
         $newitem->price = $request->price;
+        $newitem->quantity = $request->quantity;
         $newitem->description = $request->description;
         
         
@@ -88,8 +89,9 @@ class menuController extends Controller
         
         $editSingle->title = $request['dish-name'];
         $editSingle->price = $request['price'];
+        $editSingle->quantity = $request['quantity'];
         $editSingle->description = $request['description'];
-//        $editSingle->image = $request['image'];
+
         
         
            

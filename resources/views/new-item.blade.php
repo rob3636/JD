@@ -31,7 +31,35 @@
                 <input type="text" placeholder="Dish Name" required class="form-control" name="title" autofocus/>
             </div>
             <div class="form-group">
-                <input type="text" placeholder="Price" name="price" class="form-control"/>
+                  <div class="row">
+                <div class="col-sm-6">
+               
+                    <div class="input-group">
+                       <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" name="price" placeholder="Price"/>
+                    </div>
+                </div>
+                   
+               <div class="col-sm-6">
+                   
+                     <select class="form-control" name="quantity">
+                <option value="" selected>Quantity</option>     
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+
+                    </select>
+                    
+
+                </div>
+                </div>
             </div>
             
             <div class="form-group">

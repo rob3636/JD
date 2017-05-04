@@ -27,13 +27,44 @@
     <div class="col-md-6">
         
             <div class="form-group">
+               <label>Name of Dish</label>
                 <input type="text" value="{{$single->title}}" required class="form-control" name="dish-name" autofocus />
             </div>
             <div class="form-group">
-                <input type="text" value="{{$single->price}}" class="form-control" name="price"/>
+  <div class="row">
+                <div class="col-sm-6">
+               <label>Price</label>
+                   
+                    <div class="input-group">
+                        <div class="input-group-addon">$</div>
+                        <input type="text" value="{{$single->price}}" class="form-control" name="price"/>
+                    </div>
+                </div>
+                   
+               <div class="col-sm-6">
+                    <label>Quantity</label>
+                     <select class="form-control" name="quantity">
+                     
+                <option value="1" {{ $single->quantity == 1  ? "selected" : "" }}>1</option>
+                <option value="2" {{ $single->quantity == 2  ? "selected" : "" }}>2</option>
+                <option value="3" {{ $single->quantity == 3  ? "selected" : "" }}>3</option>
+                <option value="4" {{ $single->quantity == 4  ? "selected" : "" }}>4</option>
+                <option value="5" {{ $single->quantity == 5  ? "selected" : "" }}>5</option>
+                <option value="6" {{ $single->quantity == 6  ? "selected" : "" }}>6</option>
+                <option value="7" {{ $single->quantity == 7  ? "selected" : "" }}>7</option>
+                <option value="8" {{ $single->quantity == 8  ? "selected" : "" }}>8</option>
+                <option value="9" {{ $single->quantity == 9  ? "selected" : "" }}>9</option>
+                <option value="10" {{ $single->quantity == 10  ? "selected" : "" }}>10</option>
+
+                    </select>
+                    
+
+                </div>
+    </div>
             </div>
             
             <div class="form-group">
+               <label>Description</label>
                 <textarea class="form-control" name="description" >{{$single->description}}</textarea>
             </div>
             
