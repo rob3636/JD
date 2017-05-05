@@ -3,7 +3,7 @@
         <div class="container map-clean">
             
                 <h1>Contact Us</h1>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <p class="text-center">Located in the heart of Bay of Pleanty.</p>
           
         
         
