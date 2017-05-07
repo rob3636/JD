@@ -2,20 +2,20 @@
 <div id="home"></div>
 @foreach($hero as $heroimage)
 
-<div class="bg">
-    <div class="image" style="background-image: url({{asset('hero-image')}}/{{$heroimage->image}})"></div>
-</div>
+
 
 
 @endforeach
 
 <div class="jumbotron">
   
-  
+  <div class="bg">
+    <div class="image" style="background-image: url({{asset('hero-image')}}/{{$heroimage->image}})"></div>
+</div>
   <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-        <div class="navbar-header">
+        <div class="navbar-header" id="navbar">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -41,6 +41,8 @@
     </div>
 
     <div class="container-fluid big-logo-row">
+     
+     
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">

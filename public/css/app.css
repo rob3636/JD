@@ -48,6 +48,8 @@ span b {
 .pgwSlider .ps-current img {
   max-width: 100%;
   min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: auto;
   display: block;
   -webkit-transition: margin-top 250ms linear;
@@ -540,6 +542,7 @@ html {
   padding-top: 75px;
   height: 75px;
   overflow: hidden;
+  position: absolute;
 }
 
 .small-logo img {
@@ -548,12 +551,15 @@ html {
   padding-bottom: 0px;
 }
 
+#navbar {
+  min-height: 80px;
+}
+
 /* *********************************
            Big Logo
   ********************************** */
 .big-logo-row .big-logo-container {
   padding-top: 75px;
-  margin-top: 20vh;
   text-align: center;
 }
 
@@ -685,9 +691,9 @@ form .btn {
 
 .slider {
   width: 100%;
-  margin: 0 auto 0;
   overflow: visible;
   position: relative;
+  height: 200px;
 }
 
 .mask {
@@ -1101,7 +1107,6 @@ td .gallery-container .new-image {
 
 section {
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 section .container h1 {

@@ -14,6 +14,7 @@ $(function () {
     $(".overlay").mouseleave(function () {
         $(".overlay iframe").css("pointer-events", "none");
     });
+    var navbarHeight = $('.navbar').height();
     $(window).scroll(function () {
         var navbarColor = "76,71,71"; //color attr for rgba
         var smallLogoHeight = $('.small-logo').height();

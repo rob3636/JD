@@ -107,6 +107,7 @@ $small-logo-padding: 0px; // of bottom padding to look nice
     padding-top: $navbar-height;
     height: $navbar-height;
     overflow: hidden;
+    position: absolute;
 }
 
 .small-logo img {
@@ -114,6 +115,10 @@ $small-logo-padding: 0px; // of bottom padding to look nice
     height: 75px;
     width: auto;
     padding-bottom: $small-logo-padding;
+}
+
+#navbar {
+    min-height: 80px;
 }
 
 
@@ -124,7 +129,7 @@ $small-logo-padding: 0px; // of bottom padding to look nice
 .big-logo-row {
     .big-logo-container {
         padding-top: $navbar-height;
-        margin-top: 20vh;
+        //        margin-top: 20vh;
         text-align: center;
     }
     h1 {

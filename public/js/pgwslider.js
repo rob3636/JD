@@ -20,7 +20,7 @@
             , touchControls: true
             , verticalCentering: true
             , adaptiveHeight: false
-            , maxHeight: 500
+            , maxHeight: 350
             , beforeSlide: null
             , afterSlide: null
             , adaptiveDuration: 200

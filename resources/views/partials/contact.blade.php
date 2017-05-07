@@ -4,6 +4,9 @@
             
                 <h1>Contact Us</h1>
                 <p class="text-center">Located in the heart of Bay of Pleanty.</p>
+                
+                <p class="text-center">Hours: 11:30AM-10PM</p>
+                <p class="text-center">Phone: 07-575 2739</p>
           
         
         
