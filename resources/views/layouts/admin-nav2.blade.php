@@ -1,4 +1,4 @@
-<div id="notifications"></div>
+
 
 <ul class="nav nav-pills nav-stacked">
     <li class="{{ Route::getCurrentRoute()->getPath() == 'admin' ? 'active' : '' }}"><a href="{{ url('/admin') }}"><i class="fa fa-home fa-fw"></i>Home</a></li>
@@ -15,9 +15,6 @@
     <li><a href="{{ url('/logout') }}"><i class="glyphicon glyphicon-off fa-fw"></i>Logout</a></li>
                 
 </ul>
-            
-            
-                    
+  
 
-         
-        
+

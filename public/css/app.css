@@ -684,6 +684,30 @@ form .btn {
   margin-top: 1rem;
 }
 
+.navbar-default li {
+  padding: 20px;
+  font-size: 1.5em;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+}
+
+.navbar-brand {
+  padding-top: 0;
+}
+
+.navbar-brand img {
+  height: 75px;
+  width: auto;
+}
+
+.navbar-default {
+  background-color: #424242;
+}
+
+.well {
+  background-color: #fafafa;
+}
+
 .content-slider {
   width: 100%;
   margin-top: 100px;

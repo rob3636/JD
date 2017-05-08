@@ -17,7 +17,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     
                  
-          <form action="/admin/menu/{{$single->id}}" method="post" enctype="multipart/form-data">         {{ csrf_field() }}
+          <form action="/admin/menu/{{$single->id}}" method="post" enctype="multipart/form-data" class="pure-form">         {{ csrf_field() }}
                   {{ method_field('put') }}
                    
                    <div class="row admin" id="contact">
@@ -70,12 +70,12 @@
             
            <div class="form-group row center-block">
                
-                <div class="col-sm-8 no-padding">
-                    <input class="btn btn-default" type="submit" value="Change" name="submit" id="edit-btn">
+                <div class="col-sm-8">
+                    <input class="pure-button pure-button-primary" type="submit" value="Change" name="submit" id="edit-btn">
                 </div>
                 
-               <div class="col-sm-4 no-padding">
-                   <a href="/admin/menu/{{$single->id}}/delete">  <input class="btn btn-default" value="Remove" name="remove" id="edit-btn"></a>
+               <div class="col-sm-4">
+                   <a href="/admin/menu/{{$single->id}}/delete">  <input class="pure-button" value="Remove" name="remove" id="edit-btn"></a>
                 </div>
             </div>
         
@@ -84,7 +84,7 @@
     <div class="gallery-container">
         <img src="{{asset('menu')}}/{{$single->image}}" class="img-thumbnail edit-menu-image center-block" id="menu-img-tag">
         
-<!--        <img src="" id="menu-img-tag">-->
+
         
         <input type="file" name="file" id="menu-img">
     </div>

@@ -19,7 +19,7 @@
                 <div class="col-md-10 col-md-offset-1">
                     
                  
-        <form action="{{ url('/admin/menu/create') }}" enctype="multipart/form-data" method="post">
+        <form action="{{ url('/admin/menu/create') }}" enctype="multipart/form-data" method="post" class="pure-form">
                    {{method_field('PUT')}}
                    {{ csrf_field() }}
                    <div class="row admin">
@@ -66,7 +66,7 @@
                 <textarea class="form-control" name="description" placeholder="Description"></textarea>
             </div>
             
-            <input class="btn btn-default" type="submit" value="Create" name="submit" id="edit-btn">
+            <input class="pure-button pure-button-primary" type="submit" value="Create" name="submit" id="edit-btn">
         
         
     </div>

@@ -14,7 +14,6 @@ $(function () {
     $(".overlay").mouseleave(function () {
         $(".overlay iframe").css("pointer-events", "none");
     });
-    
     var navbarHeight = $('.navbar').height();
     $(window).scroll(function () {
         var navbarColor = "76,71,71"; //color attr for rgba
@@ -35,7 +34,7 @@ $(function () {
             smallPadding = 0;
         }
         $('.small-logo-container ').css({
-                    "padding-top": smallPadding
+            "padding-top": smallPadding
         });
         var navOpacity = ySmall / smallLogoHeight;
         if (navOpacity > 1) {

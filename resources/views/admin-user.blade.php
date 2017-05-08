@@ -41,7 +41,7 @@
         </tbody>
     </table>
 </div>
-       <a href="{{ url('/admin/users/newuser') }}"><button class="btn btn-defult" type="button">New User</button></a>
+       <a href="{{ url('/admin/users/newuser') }}"><button class="pure-button pure-button-primary" type="button">New User</button></a>
         </div>
     </div>
 </div>

@@ -15,7 +15,7 @@
 <div class="row admin">
     
     @foreach($menues as $single)
-    <div class="col-md-4 col-xs-12">
+    <div class="col-md-4 col-sm-6 col-xs-12">
        
         <a href="{{ url('/admin/menu') }}/{{$single->id}}">
         <div class="menu-container img-thumbnail">
@@ -34,7 +34,7 @@
     
     @endforeach
     
-    <div class="col-md-4 col-xs-12">
+    <div class="col-md-4 col-sm-6 col-xs-12">
        
         <a href="{{ url('/admin/menu/new')}}">
            <div class="menu-container img-thumbnail">
